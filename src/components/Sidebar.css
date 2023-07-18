@@ -1,0 +1,26 @@
+#sidebar a.active {
+    background-color:  blue;
+    /* background: yellow; */
+    text-decoration: none;
+    color: white;
+  }
+
+  #sidebar a {
+    background-color:  grey;
+    /* background: yellow; */
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid #ffff;
+  }
+
+#sidebar section{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 6rem; */
+    width: 100%;
+}
+#sidebar{
+    min-width: 250px;
+    max-width: 250px;
+}
