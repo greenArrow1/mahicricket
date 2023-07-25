@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { forwardRef, Ref, useEffect, useImperativeHandle } from "react";
 import './Cards.css';
-export default function Cards(props: any){
+ function Cards (props: any, ref: Ref<any>){
 
    useEffect(()=>{
 
@@ -21,10 +21,15 @@ export default function Cards(props: any){
         backgroundSize:"contain"
        
     };
-    
+    useImperativeHandle(ref,()=>({
+        printData : ()=>{
+            console.log("printed")
+        }
+    }))
+   
     return (
         <>
-            <div itemID="CardContainer" style={cardsStyle} className="CardContainer" onClick={()=>{}}>
+            <div itemID="CardContainer" style={cardsStyle} className="CardContainer" >
                <p style={{margin:"1rem",textOverflow: "ellipsis",
     whiteSpace: "nowrap",
     overflow: "hidden"}}>
@@ -33,4 +38,6 @@ export default function Cards(props: any){
             </div>
         </>
     )
+    
 }
+export default forwardRef(Cards)

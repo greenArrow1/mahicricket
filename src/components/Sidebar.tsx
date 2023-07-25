@@ -17,7 +17,7 @@ return <nav id="sidebar" style={{
         display: "flex",
         alignItems: "center",
         borderRight: "1px solid green",
-        width: "250px"
+        width: "30%"
     
     }}>
 <section>
