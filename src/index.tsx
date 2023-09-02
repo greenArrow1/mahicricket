@@ -19,6 +19,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import SignUp from './components/signup';
 
 const getLayout = ()=>{
   return <>
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <SignIn/>
+      },
+      {
+        path: "/signup",
+        element: <SignUp/>
       },
       {
         path: "/trending",
