@@ -14,6 +14,12 @@ import Dashboard from './components/Dashboard';
 import Cards from './components/Cards';
 import { Cricket } from './components/Cricket';
 import Trending from './components/Trending';
+import SignIn from './components/login';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 const getLayout = ()=>{
   return <>
     <Sidebar/>
@@ -29,7 +35,7 @@ const router = createBrowserRouter([
       
       {
         path: "/",
-        element: <Trending/>
+        element: <SignIn/>
       },
       {
         path: "/trending",
