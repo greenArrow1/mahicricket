@@ -21,7 +21,7 @@ return <nav id="sidebar" style={{
     
     }}>
 <section>
-<NavLink to="/messages" >Messages</NavLink>
+<NavLink to="/login" >LogIn/Sign-IN</NavLink>
   <NavLink to="/cricket" >Cricket</NavLink>
   {/* <NavLink to="/messages" ></NavLink> */}
   <NavLink to="/trending" >Trending</NavLink>
